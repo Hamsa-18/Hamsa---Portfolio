@@ -24,47 +24,62 @@
     <main>
 
         <!-- Hero Section -->
-        <section id="home">
+        <section id="home" aria-label="Hero Section">
             <article>
-                <img src="c:\Users\DELL AMD\Downloads\passport size photo_page-0001 (3).jpg" alt="Hamsa Profile Photo" width="200">
+                <img src="assets/images/profile.png" alt="Hamsa Profile Photo" width="200" height="200" loading="lazy">
                 <h1>Hello, I'm Hamsa</h1>
                 <p>Full Stack Developer | Backend & AI Enthusiast</p>
             </article>
         </section>
 
         <!-- About Section -->
-        <section id="about">
+        <section id="about" aria-label="About Me">
             <h2>About Me</h2>
             <p>
                 I am a Computer Science graduate passionate about building scalable backend systems 
-                and intelligent web applications. I have experience working with MERN stack, Django, 
+                and intelligent web applications. I have experience working with the MERN stack, Django, 
                 and PostgreSQL. I enjoy solving real-world problems and continuously improving my 
                 data structures and system design skills.
             </p>
         </section>
 
         <!-- Projects Section -->
-        <section id="projects">
+        <section id="projects" aria-label="Projects">
             <h2>My Projects</h2>
 
-            <div class="project-container">
+            <div class="projects-grid">
 
-                <!-- Project Card 1 -->
+                <!-- Project 1 -->
                 <article class="project-card">
+                    <picture>
+                        <source media="(max-width: 600px)" srcset="assets/images/project-1-mobile.jpg">
+                        <source media="(min-width: 601px)" srcset="assets/images/project-1.jpg">
+                        <img src="assets/images/project-1.jpg" alt="Portfolio website built using HTML and CSS" width="300" height="200" loading="lazy">
+                    </picture>
                     <h3>Portfolio Website</h3>
                     <p>A personal portfolio website built using HTML and CSS.</p>
                     <a href="#">View Project</a>
                 </article>
 
-                <!-- Project Card 2 -->
+                <!-- Project 2 -->
                 <article class="project-card">
+                    <picture>
+                        <source media="(max-width: 600px)" srcset="assets/images/project-2-mobile.jpg">
+                        <source media="(min-width: 601px)" srcset="assets/images/project-2.jpg">
+                        <img src="assets/images/project-2.jpg" alt="Task Manager App using JavaScript for simple task management" width="300" height="200" loading="lazy">
+                    </picture>
                     <h3>Task Manager App</h3>
                     <p>A simple task management app using JavaScript.</p>
                     <a href="#">View Project</a>
                 </article>
 
-                <!-- Project Card 3 -->
+                <!-- Project 3 -->
                 <article class="project-card">
+                    <picture>
+                        <source media="(max-width: 600px)" srcset="assets/images/project-3-mobile.jpg">
+                        <source media="(min-width: 601px)" srcset="assets/images/project-3.jpg">
+                        <img src="assets/images/project-3.jpg" alt="E-commerce website frontend built with React" width="300" height="200" loading="lazy">
+                    </picture>
                     <h3>E-Commerce Website</h3>
                     <p>An e-commerce frontend built with React.</p>
                     <a href="#">View Project</a>
@@ -74,15 +89,15 @@
         </section>
 
         <!-- Contact Section -->
-        <section id="contact">
+        <section id="contact" aria-label="Contact Information">
             <h2>Get In Touch</h2>
             <address>
-                <p>Email: hamsavmurthy@gmail.com</p>
+                <p>Email: <a href="mailto:hamsavmurthy@gmail.com">hamsavmurthy@gmail.com</a></p>
                 <p>
                     GitHub: <a href="https://github.com/Hamsa-18" target="_blank" rel="noopener noreferrer">github.com/Hamsa-18</a>
                 </p>
                 <p>
-                    LinkedIn: <a href="http://linkedin.com/in/hamsa-b-v-633748258/" target="_blank" rel="noopener noreferrer">linkedin.com/in/hamsa-b-v</a>
+                    LinkedIn: <a href="https://linkedin.com/in/hamsa-b-v-633748258/" target="_blank" rel="noopener noreferrer">linkedin.com/in/hamsa-b-v</a>
                 </p>
             </address>
         </section>
