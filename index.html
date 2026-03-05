@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hamsa - Portfolio</title>
+    <meta name="description" content="Hamsa - Full Stack Developer specializing in Backend and AI applications.">
+    <title>Hamsa | Full Stack Developer</title>
+
+    <!-- Styles -->
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-    <!-- Header -->
+    <!-- ================= HEADER ================= -->
     <header>
-        <nav>
+        <nav aria-label="Main Navigation">
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -20,30 +25,40 @@
         </nav>
     </header>
 
-    <!-- Main Content -->
     <main>
 
-        <!-- Hero Section -->
+        <!-- ================= HERO ================= -->
         <section id="home" aria-label="Hero Section">
             <article>
-                <img src="assets/images/profile.png" alt="Hamsa Profile Photo" width="200" height="200" loading="lazy">
+                <img 
+                    src="assets/images/profile.png" 
+                    alt="Hamsa Profile Photo"
+                    width="200"
+                    height="200"
+                >
+
                 <h1>Hello, I'm Hamsa</h1>
-                <p>Full Stack Developer | Backend & AI Enthusiast</p>
+                <p><strong>Full Stack Developer</strong> | Backend & AI Enthusiast</p>
+
+                <p>
+                    <a href="assets/resume.pdf" download>Download Resume</a>
+                </p>
             </article>
         </section>
 
-        <!-- About Section -->
+        <!-- ================= ABOUT ================= -->
         <section id="about" aria-label="About Me">
             <h2>About Me</h2>
             <p>
-                I am a Computer Science graduate passionate about building scalable backend systems 
-                and intelligent web applications. I have experience working with the MERN stack, Django, 
-                and PostgreSQL. I enjoy solving real-world problems and continuously improving my 
-                data structures and system design skills.
+                I am a Computer Science graduate passionate about building scalable 
+                backend systems and intelligent web applications. I have experience 
+                working with the MERN stack, Django, and PostgreSQL. I enjoy solving 
+                real-world problems and continuously improving my data structures 
+                and system design skills.
             </p>
         </section>
 
-        <!-- Projects Section -->
+        <!-- ================= PROJECTS ================= -->
         <section id="projects" aria-label="Projects">
             <h2>My Projects</h2>
 
@@ -51,62 +66,102 @@
 
                 <!-- Project 1 -->
                 <article class="project-card">
-                    <picture>
-                        <source media="(max-width: 600px)" srcset="assets/images/project-1.jpg">
-                        <source media="(min-width: 601px)" srcset="assets/images/project-1.jpg">
-                        <img src="assets/images/project-1.jpg" alt="Portfolio website built using HTML and CSS" width="300" height="200" loading="lazy">
-                    </picture>
+                    <img 
+                        src="assets/images/project-1.jpg" 
+                        alt="Portfolio website built using HTML and CSS"
+                        width="300"
+                        height="200"
+                    >
                     <h3>Portfolio Website</h3>
-                    <p>A personal portfolio website built using HTML and CSS.</p>
-                    <a href="#">View Project</a>
+                    <p>Responsive personal portfolio built using semantic HTML and CSS.</p>
+                    <a href="#" target="_blank" rel="noopener noreferrer">View Code</a>
                 </article>
 
                 <!-- Project 2 -->
                 <article class="project-card">
-                    <picture>
-                        <source media="(max-width: 600px)" srcset="assets/images/project-2.jpg">
-                        <source media="(min-width: 601px)" srcset="assets/images/project-2.jpg">
-                        <img src="assets/images/project-2.jpg" alt="Task Manager App using JavaScript for simple task management" width="300" height="200" loading="lazy">
-                    </picture>
+                    <img 
+                        src="assets/images/project-2.jpg" 
+                        alt="Task Manager App built with JavaScript"
+                        width="300"
+                        height="200"
+                    >
                     <h3>Task Manager App</h3>
-                    <p>A simple task management app using JavaScript.</p>
-                    <a href="#">View Project</a>
+                    <p>Task management application with DOM manipulation and validation.</p>
+                    <a href="#" target="_blank" rel="noopener noreferrer">View Code</a>
                 </article>
 
                 <!-- Project 3 -->
                 <article class="project-card">
-                    <picture>
-                        <source media="(max-width: 600px)" srcset="assets/images/project-3.jpg">
-                        <source media="(min-width: 601px)" srcset="assets/images/project-3.jpg">
-                        <img src="assets/images/project-3.jpg" alt="E-commerce website frontend built with React" width="300" height="200" loading="lazy">
-                    </picture>
-                    <h3>E-Commerce Website</h3>
-                    <p>An e-commerce frontend built with React.</p>
-                    <a href="#">View Project</a>
+                    <img 
+                        src="assets/images/project-3.jpg" 
+                        alt="E-Commerce frontend built using React"
+                        width="300"
+                        height="200"
+                    >
+                    <h3>E-Commerce Frontend</h3>
+                    <p>Modern e-commerce UI built using React and reusable components.</p>
+                    <a href="#" target="_blank" rel="noopener noreferrer">View Code</a>
                 </article>
 
             </div>
         </section>
 
-        <!-- Contact Section -->
-        <section id="contact" aria-label="Contact Information">
+        <!-- ================= CONTACT ================= -->
+        <section id="contact" aria-label="Contact">
             <h2>Get In Touch</h2>
+
             <address>
-                <p>Email: <a href="mailto:hamsavmurthy@gmail.com">hamsavmurthy@gmail.com</a></p>
-                <p>
-                    GitHub: <a href="https://github.com/Hamsa-18" target="_blank" rel="noopener noreferrer">github.com/Hamsa-18</a>
+                <p>Email: 
+                    <a href="mailto:hamsavmurthy@gmail.com">
+                        hamsavmurthy@gmail.com
+                    </a>
                 </p>
+
                 <p>
-                    LinkedIn: <a href="https://linkedin.com/in/hamsa-b-v-633748258/" target="_blank" rel="noopener noreferrer">linkedin.com/in/hamsa-b-v</a>
+                    GitHub:
+                    <a href="https://github.com/Hamsa-18" 
+                    target="_blank" 
+                    rel="noopener noreferrer">
+                        github.com/Hamsa-18
+                    </a>
+                </p>
+
+                <p>
+                    LinkedIn:
+                    <a href="https://linkedin.com/in/hamsa-b-v-633748258/" 
+                    target="_blank" 
+                    rel="noopener noreferrer">
+                        linkedin.com/in/hamsa-b-v
+                    </a>
                 </p>
             </address>
+
         </section>
 
     </main>
 
-    <!-- Footer -->
+    <!-- ================= FOOTER ================= -->
     <footer>
+
+        <!-- Newsletter Form (Day 3 Practice) -->
+        <section aria-label="Newsletter Signup">
+            <h3>Subscribe to Newsletter</h3>
+
+            <form action="#" method="POST">
+                <label for="newsletter-email">Email:</label>
+                <input 
+                    type="email" 
+                    id="newsletter-email" 
+                    name="newsletter-email" 
+                    required
+                    placeholder="Enter your email"
+                >
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+
         <p>&copy; 2026 Hamsa. All rights reserved.</p>
+
     </footer>
 
 </body>
