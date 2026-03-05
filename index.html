@@ -2,10 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Portfolio</title>
+    <title>HAMSA BV | Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- LINK CSS FILE -->
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -13,30 +11,38 @@
 
 <header>
     <div class="nav-container">
-        <div class="logo">My Portfolio</div>
+        <div class="logo">HAMSA BV</div>
+
         <ul class="nav-menu">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
+
+            <!-- Social Links -->
+            <li><a href="https://github.com/Hamsa-18" target="_blank">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/hamsa-b-v-633748258/" target="_blank">LinkedIn</a></li>
         </ul>
     </div>
 </header>
 
 <!-- HOME -->
 <section id="home">
-    <img src="https://via.placeholder.com/150" alt="Profile Picture">
-    <h1>Hello, I'm Your Name</h1>
-    <p>Full Stack Developer | MERN Stack Enthusiast</p>
+    <img src="profile.png" alt="Hamsa BV Profile Picture">
+    <h1>Hello, I'm HAMSA BV</h1>
+    <p>Full Stack Developer | AI Enthusiast</p>
 </section>
 
 <!-- ABOUT -->
 <section id="about">
     <h2>About Me</h2>
     <p>
-        I am a passionate full stack developer who enjoys building
-        responsive and user-friendly web applications using modern technologies.
+        I am a passionate Full Stack Developer and AI Enthusiast with a strong interest in building scalable and user-centric applications.
+        I enjoy working across the entire development stack, from designing intuitive frontends to developing robust backend systems.
+        I continuously explore modern technologies and best practices to improve performance and code quality.
+        My goal is to solve real-world problems through clean architecture and efficient solutions.
+        I am always eager to learn, adapt, and contribute to impactful projects.
     </p>
 </section>
 
@@ -68,33 +74,31 @@
 
     <div class="projects-container">
 
-        <!-- LEFT SIDE -->
         <div class="projects-grid">
 
             <div class="project-card">
-                <img src="https://via.placeholder.com/400x200" alt="">
+                <img src="project-1.jpg" alt="Portfolio Website Screenshot">
                 <h3>Portfolio Website</h3>
                 <p>Responsive personal portfolio built using HTML and CSS.</p>
-                <a href="#">View Code</a>
+                <a href="https://github.com/Hamsa-18/portfolio-project" target="_blank">View Code</a>
             </div>
 
             <div class="project-card">
-                <img src="https://via.placeholder.com/400x200" alt="">
+                <img src="project-2.jpg" alt="Task Manager App Screenshot">
                 <h3>Task Manager App</h3>
-                <p>Task management application with JavaScript validation.</p>
-                <a href="#">View Code</a>
+                <p>Task management app with DOM manipulation and validation.</p>
+                <a href="https://github.com/Hamsa-18/task-manager" target="_blank">View Code</a>
             </div>
 
             <div class="project-card">
-                <img src="https://via.placeholder.com/400x200" alt="">
+                <img src="project-3.jpg" alt="E-Commerce Frontend Screenshot">
                 <h3>E-Commerce Frontend</h3>
-                <p>Modern UI built using React components.</p>
-                <a href="#">View Code</a>
+                <p>Modern e-commerce UI built with React components.</p>
+                <a href="https://github.com/Hamsa-18/ecommerce-frontend" target="_blank">View Code</a>
             </div>
 
         </div>
 
-        <!-- RIGHT SIDE -->
         <div class="featured-projects">
             <h3>Featured Projects</h3>
             <ol>
@@ -112,20 +116,19 @@
     <h2>Get In Touch</h2>
 
     <form id="contact-form">
-
         <div class="form-group">
-            <label>Name</label>
-            <input type="text" required>
+            <label for="name">Name</label>
+            <input type="text" id="name" required>
         </div>
 
         <div class="form-group">
-            <label>Email</label>
-            <input type="email" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
         </div>
 
         <div class="form-group">
-            <label>Subject</label>
-            <select required>
+            <label for="subject">Subject</label>
+            <select id="subject" required>
                 <option value="">Select</option>
                 <option>Project Inquiry</option>
                 <option>Job Opportunity</option>
@@ -134,18 +137,28 @@
         </div>
 
         <div class="form-group">
-            <label>Message</label>
-            <textarea rows="4" required></textarea>
+            <label for="message">Message</label>
+            <textarea id="message" rows="4" required></textarea>
         </div>
 
         <button type="submit" class="btn-primary">Send Message</button>
         <button type="reset" class="btn-secondary">Reset</button>
-
     </form>
+
+    <p class="direct-email">
+        Or email me directly at:
+        <a href="mailto:hamsavmurthy@gmail.com">hamsavmurthy@gmail.com</a>
+    </p>
 </section>
 
 <footer>
-    <p>© 2024 Your Name. All rights reserved.</p>
+    <p>© 2026 HAMSA BV. All rights reserved.</p>
+
+    <div class="footer-links">
+        <a href="https://github.com/Hamsa-18" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/hamsa-b-v-633748258/" target="_blank">LinkedIn</a>
+        <a href="mailto:hamsavmurthy@gmail.com">Email</a>
+    </div>
 </footer>
 
 </body>
