@@ -107,38 +107,85 @@
         </section>
 
         <!-- ================= CONTACT ================= -->
-        <section id="contact" aria-label="Contact">
-            <h2>Get In Touch</h2>
+        <section id="contact" aria-label="Contact Form">
+    <h2>Get In Touch</h2>
 
-            <address>
-                <p>Email: 
-                    <a href="mailto:hamsavmurthy@gmail.com">
-                        hamsavmurthy@gmail.com
-                    </a>
-                </p>
+    <form id="contact-form" action="#" method="POST">
 
-                <p>
-                    GitHub:
-                    <a href="https://github.com/Hamsa-18" 
-                    target="_blank" 
-                    rel="noopener noreferrer">
-                        github.com/Hamsa-18
-                    </a>
-                </p>
+        <!-- Full Name -->
+        <div class="form-group">
+            <label for="name">Full Name *</label>
+            <input 
+                type="text"
+                id="name"
+                name="name"
+                required
+                minlength="2"
+                maxlength="100"
+                placeholder="Enter your full name"
+            >
+        </div>
 
-                <p>
-                    LinkedIn:
-                    <a href="https://linkedin.com/in/hamsa-b-v-633748258/" 
-                    target="_blank" 
-                    rel="noopener noreferrer">
-                        linkedin.com/in/hamsa-b-v
-                    </a>
-                </p>
-            </address>
+        <!-- Email -->
+        <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input 
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="example@email.com"
+            >
+        </div>
 
-        </section>
+        <!-- Phone -->
+        <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input 
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Optional"
+            >
+        </div>
 
-    </main>
+        <!-- Subject Dropdown -->
+        <div class="form-group">
+            <label for="subject">Subject *</label>
+            <select id="subject" name="subject" required>
+                <option value="">--Select--</option>
+                <option value="job">Job Opportunity</option>
+                <option value="collaboration">Collaboration</option>
+                <option value="general">General Inquiry</option>
+            </select>
+        </div>
+
+        <!-- Message -->
+        <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea 
+                id="message"
+                name="message"
+                rows="6"
+                required
+                minlength="10"
+                maxlength="1000"
+                placeholder="Write your message..."
+            ></textarea>
+        </div>
+
+        <!-- Checkbox -->
+        <div class="form-group">
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">I agree to be contacted *</label>
+        </div>
+
+        <!-- Buttons -->
+        <button type="submit" class="btn-primary">Send Message</button>
+        <button type="reset" class="btn-secondary">Clear</button>
+
+    </form>
+</section>
 
     <!-- ================= FOOTER ================= -->
     <footer>
