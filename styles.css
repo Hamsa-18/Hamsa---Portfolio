@@ -1,4 +1,7 @@
-/* ---------- Global Styles ---------- */
+/* ===================================================
+GLOBAL STYLES
+=================================================== */
+
 * {
     margin: 0;
     padding: 0;
@@ -20,14 +23,17 @@ body {
 a {
     text-decoration: none;
     color: #1a73e8;
-    transition: all 0.3s ease;
+    transition: 0.3s ease;
 }
 
 a:hover {
     color: #0d47a1;
 }
 
-/* ---------- Header ---------- */
+/* ===================================================
+HEADER / NAVIGATION
+=================================================== */
+
 header {
     background: #ffffff;
     border-bottom: 1px solid #e0e0e0;
@@ -37,19 +43,32 @@ header {
     z-index: 100;
 }
 
-header ul {
+.nav-container {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #1a73e8;
+}
+
+.nav-menu {
     display: flex;
     list-style: none;
-    justify-content: center;
     gap: 2rem;
 }
 
-header a {
+.nav-link {
     font-weight: 500;
     position: relative;
 }
 
-header a::after {
+.nav-link::after {
     content: "";
     position: absolute;
     left: 0;
@@ -57,14 +76,17 @@ header a::after {
     width: 0%;
     height: 2px;
     background: #1a73e8;
-    transition: width 0.3s ease;
+    transition: 0.3s ease;
 }
 
-header a:hover::after {
+.nav-link:hover::after {
     width: 100%;
 }
 
-/* ---------- Hero Section ---------- */
+/* ===================================================
+HERO SECTION
+=================================================== */
+
 #home {
     text-align: center;
     padding: 5rem 2rem;
@@ -72,11 +94,12 @@ header a:hover::after {
 }
 
 #home img {
+    width: 150px;
     border-radius: 50%;
     margin-bottom: 1.5rem;
     border: 4px solid #1a73e8;
     box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-    transition: transform 0.3s ease;
+    transition: 0.3s ease;
 }
 
 #home img:hover {
@@ -84,7 +107,7 @@ header a:hover::after {
 }
 
 #home h1 {
-    font-size: 2.7rem;
+    font-size: 2.5rem;
     margin-bottom: 0.5rem;
     color: #1a73e8;
 }
@@ -92,10 +115,12 @@ header a:hover::after {
 #home p {
     font-size: 1.2rem;
     color: #555;
-    margin-bottom: 1rem;
 }
 
-/* ---------- About Section ---------- */
+/* ===================================================
+ABOUT SECTION
+=================================================== */
+
 #about {
     padding: 4rem 2rem;
     max-width: 800px;
@@ -109,25 +134,83 @@ header a:hover::after {
     color: #1a73e8;
 }
 
-/* ---------- Projects Section ---------- */
+/* ===================================================
+SKILLS SECTION
+=================================================== */
+
+#skills {
+    padding: 4rem 2rem;
+    background: #ffffff;
+}
+
+#skills h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #1a73e8;
+}
+
+.skills-container {
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.skill-category {
+    background: #f5f7fb;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.skill-category h3 {
+    margin-bottom: 1rem;
+    color: #1a73e8;
+}
+
+.skill-category ul {
+    list-style: disc inside;
+}
+
+/* ===================================================
+PROJECTS SECTION
+=================================================== */
+
 #projects {
     padding: 4rem 2rem;
+    background-color: #f5f7fb;
 }
 
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
+#projects h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #1a73e8;
+}
+
+.projects-container {
     max-width: 1200px;
     margin: auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+    align-items: start;
 }
 
+/* Left Grid */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+/* Card */
 .project-card {
     background: #ffffff;
     border-radius: 12px;
     padding: 1.5rem;
     box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: 0.3s ease;
 }
 
 .project-card:hover {
@@ -143,7 +226,6 @@ header a:hover::after {
 
 .project-card h3 {
     margin-bottom: 0.5rem;
-    font-size: 1.3rem;
     color: #1a73e8;
 }
 
@@ -159,15 +241,37 @@ header a:hover::after {
     background: #1a73e8;
     color: #fff;
     border-radius: 6px;
-    font-size: 0.9rem;
-    transition: background 0.3s ease;
 }
 
 .project-card a:hover {
     background: #0d47a1;
 }
 
-/* ---------- Contact Section ---------- */
+/* Featured Projects */
+.featured-projects {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.featured-projects h3 {
+    margin-bottom: 1rem;
+    color: #1a73e8;
+}
+
+.featured-projects ol {
+    padding-left: 1.2rem;
+}
+
+.featured-projects li {
+    margin-bottom: 0.7rem;
+}
+
+/* ===================================================
+CONTACT SECTION
+=================================================== */
+
 #contact {
     background: #e8f0fe;
     padding: 4rem 2rem;
@@ -179,7 +283,6 @@ header a:hover::after {
     color: #1a73e8;
 }
 
-/* Form Layout */
 #contact-form {
     max-width: 600px;
     margin: auto;
@@ -207,15 +310,14 @@ header a:hover::after {
     border: 1px solid #ccc;
     border-radius: 6px;
     font-size: 0.95rem;
-    transition: border 0.3s ease, box-shadow 0.3s ease;
 }
 
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
     border-color: #1a73e8;
-    box-shadow: 0 0 0 2px rgba(26,115,232,0.2);
     outline: none;
+    box-shadow: 0 0 0 2px rgba(26,115,232,0.2);
 }
 
 /* Buttons */
@@ -223,10 +325,8 @@ button {
     padding: 0.6rem 1.2rem;
     border: none;
     border-radius: 6px;
-    font-size: 0.95rem;
     cursor: pointer;
-    margin-right: 0.5rem;
-    transition: all 0.3s ease;
+    font-size: 0.95rem;
 }
 
 .btn-primary {
@@ -246,7 +346,10 @@ button {
     background: #c6c6c6;
 }
 
-/* ---------- Footer ---------- */
+/* ===================================================
+FOOTER
+=================================================== */
+
 footer {
     text-align: center;
     padding: 2rem;
@@ -256,7 +359,6 @@ footer {
     color: #666;
 }
 
-/* Newsletter */
 footer form {
     margin: 1rem 0;
 }
@@ -268,13 +370,27 @@ footer input {
     margin-right: 0.5rem;
 }
 
-/* ---------- Responsive ---------- */
-@media (max-width: 600px) {
+/* ===================================================
+RESPONSIVE
+=================================================== */
 
-    header ul {
+@media (max-width: 900px) {
+
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-menu {
         flex-direction: column;
         gap: 1rem;
     }
+}
+
+@media (max-width: 600px) {
 
     #home h1 {
         font-size: 2rem;
@@ -283,71 +399,4 @@ footer input {
     #contact-form {
         padding: 1.5rem;
     }
-}
-/* ---------- Navigation Upgrade ---------- */
-
-.nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1100px;
-    margin: auto;
-}
-
-.logo {
-    font-weight: bold;
-    font-size: 1.2rem;
-    color: #1a73e8;
-}
-
-.nav-menu {
-    display: flex;
-    list-style: none;
-    gap: 2rem;
-}
-
-.nav-link {
-    font-weight: 500;
-}
-
-/* ---------- Skills Section ---------- */
-
-#skills {
-    padding: 4rem 2rem;
-    background: #ffffff;
-}
-
-#skills h2 {
-    text-align: center;
-    margin-bottom: 2rem;
-    color: #1a73e8;
-}
-
-.skills-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    max-width: 1000px;
-    margin: auto;
-}
-
-.skill-category {
-    background: #f5f7fb;
-    padding: 1.5rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-}
-
-.skill-category h3 {
-    margin-bottom: 1rem;
-    color: #1a73e8;
-}
-
-.skill-category ul {
-    list-style: disc inside;
-}
-
-.featured-projects {
-    max-width: 800px;
-    margin: 1rem auto 2rem auto;
 }
