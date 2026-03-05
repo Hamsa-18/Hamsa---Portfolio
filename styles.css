@@ -284,3 +284,70 @@ footer input {
         padding: 1.5rem;
     }
 }
+/* ---------- Navigation Upgrade ---------- */
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #1a73e8;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-link {
+    font-weight: 500;
+}
+
+/* ---------- Skills Section ---------- */
+
+#skills {
+    padding: 4rem 2rem;
+    background: #ffffff;
+}
+
+#skills h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #1a73e8;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.skill-category {
+    background: #f5f7fb;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.skill-category h3 {
+    margin-bottom: 1rem;
+    color: #1a73e8;
+}
+
+.skill-category ul {
+    list-style: disc inside;
+}
+
+.featured-projects {
+    max-width: 800px;
+    margin: 1rem auto 2rem auto;
+}

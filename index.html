@@ -15,15 +15,22 @@
 
     <!-- ================= HEADER ================= -->
     <header>
-        <nav aria-label="Main Navigation">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+    <nav aria-label="Main Navigation">
+        <div class="nav-container">
+
+            <a href="#home" class="logo">Hamsa</a>
+
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-        </nav>
-    </header>
+
+        </div>
+    </nav>
+</header>
 
     <main>
 
@@ -57,6 +64,44 @@
                 and system design skills.
             </p>
         </section>
+        <section id="skills" aria-label="Technical Skills">
+    <h2>Technical Skills</h2>
+
+    <div class="skills-container">
+
+        <article class="skill-category">
+            <h3>Frontend</h3>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>React</li>
+            </ul>
+        </article>
+
+        <article class="skill-category">
+            <h3>Backend</h3>
+            <ul>
+                <li>Node.js</li>
+                <li>Django</li>
+                <li>Express</li>
+                <li>PostgreSQL</li>
+                <li>MongoDB</li>
+            </ul>
+        </article>
+
+        <article class="skill-category">
+            <h3>Tools</h3>
+            <ul>
+                <li>Git & GitHub</li>
+                <li>VS Code</li>
+                <li>Postman</li>
+                <li>Docker</li>
+            </ul>
+        </article>
+
+    </div>
+</section>
 
         <!-- ================= PROJECTS ================= -->
         <section id="projects" aria-label="Projects">
@@ -76,6 +121,12 @@
                     <p>Responsive personal portfolio built using semantic HTML and CSS.</p>
                     <a href="#" target="_blank" rel="noopener noreferrer">View Code</a>
                 </article>
+                <h3>Featured Projects</h3>
+                <ol class="featured-projects">
+                <li>Credit Approval System (Django + PostgreSQL)</li>
+                <li>E-Commerce Frontend (React)</li>
+                <li>Task Manager App (JavaScript)</li>
+            </ol>
 
                 <!-- Project 2 -->
                 <article class="project-card">
