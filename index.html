@@ -1,199 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
-    <link rel="icon" type="image/png" href="assets/icon.png">
-
-    <!-- Essential Meta Tags -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Page Information -->
-    <title>Hamsa BV - Full Stack Developer Portfolio</title>
-    <meta name="description" content="Portfolio of Hamsa BV, a Full Stack Developer and AI Enthusiast. Explore projects, skills, and contact information.">
-    <meta name="keywords" content="Hamsa BV, Full Stack Developer, Portfolio, React, Django, Node.js, MongoDB, AI">
-    <meta name="author" content="Hamsa BV">
-
-    <!-- SEO Tags -->
-    <meta name="robots" content="index, follow">
-    <meta name="language" content="English">
-    <meta name="revisit-after" content="7 days">
-
-    <!-- Open Graph (Social Media Sharing) -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://hamsa-18.github.io/">
-    <meta property="og:title" content="Hamsa BV - Full Stack Developer">
-    <meta property="og:description" content="Explore my projects and expertise in full stack development and AI.">
-    <meta property="og:image" content="assets/og-image.jpg">
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:creator" content="@yourhandle">
-    <meta name="twitter:title" content="Hamsa BV - Portfolio">
-    <meta name="twitter:description" content="Full Stack Developer & AI Enthusiast">
-    <meta name="twitter:image" content="assets/og-image.jpg">
-
-    <!-- Mobile Web App -->
-    <meta name="theme-color" content="#1a73e8">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-
-    <!-- Styles -->
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hamsa Portfolio</title>
+<!-- Favicon -->
+<link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+<link rel="icon" type="image/png" href="assets/icon.png">
+<!-- Stylesheet -->
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
+<!-- Header -->
 <header>
-    <div class="nav-container">
-        <div class="logo">HAMSA BV</div>
-        <nav>
-            <ul class="nav-menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="https://github.com/Hamsa-18" target="_blank" rel="noopener">GitHub</a></li>
-                <li><a href="https://www.linkedin.com/in/hamsa-b-v-633748258/" target="_blank" rel="noopener">LinkedIn</a></li>
-            </ul>
-        </nav>
-    </div>
+    <nav>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    </nav>
 </header>
 
+<!-- Hero Section -->
 <section id="home">
-    <img src="assets/images/profile.png" alt="Portrait of Hamsa BV">
-    <h1>Hello, I'm Hamsa BV</h1>
-    <p>Full Stack Developer | AI Enthusiast</p>
+    <img src="assets/images/profile.jpg" alt="Profile photo of Hamsa">
+    <h1>Hi, I'm Hamsa</h1>
+    <p>Full Stack Developer | Building scalable web apps</p>
 </section>
 
-<section id="about">
-    <h2>About Me</h2>
-    <p>
-        I am a passionate Full Stack Developer and AI Enthusiast focused on building scalable, user-friendly applications.
-        I enjoy working across frontend and backend technologies to create efficient, clean, and impactful solutions.
-        I continuously learn modern technologies and best practices to improve performance and code quality.
-    </p>
-</section>
+<!-- Projects Section -->
+<main>
+    <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-container">
 
-<section id="skills">
-    <h2>Skills</h2>
-    <div class="skills-container">
-        <article class="skill-box">
-            <h3>Frontend</h3>
-            <ul>
-                <li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>React</li>
-            </ul>
+        <!-- First row: 2 projects -->
+        <div class="projects-row">
+        <article class="project-card">
+            <img src="assets/images/project-1.jpg" alt="Screenshot of Portfolio Website">
+            <h3>Portfolio Website</h3>
+            <p>Responsive personal portfolio built using HTML and CSS.</p>
+            <a href="https://github.com/Hamsa-18/portfolio-project" target="_blank" rel="noopener">View Code</a>
         </article>
-        <article class="skill-box">
-            <h3>Backend</h3>
-            <ul>
-                <li>Node.js</li><li>Express</li><li>Django</li>
-            </ul>
+
+        <article class="project-card">
+            <img src="assets/images/project-2.jpg" alt="Screenshot of Task Manager App">
+            <h3>Task Manager App</h3>
+            <p>Task management application with DOM manipulation.</p>
+            <a href="https://github.com/Hamsa-18/task-manager" target="_blank" rel="noopener">View Code</a>
         </article>
-        <article class="skill-box">
-            <h3>Database</h3>
-            <ul>
-                <li>MongoDB</li><li>PostgreSQL</li>
-            </ul>
+        </div>
+
+        <!-- Second row: 1 project -->
+        <div class="projects-row single">
+        <article class="project-card">
+            <img src="assets/images/project-3.jpg" alt="Screenshot of E-Commerce Frontend">
+            <h3>E-Commerce Frontend</h3>
+            <p>Modern e-commerce UI built with React components.</p>
+            <a href="https://github.com/Hamsa-18/ecommerce-frontend" target="_blank" rel="noopener">View Code</a>
         </article>
-        <article class="skill-box">
-            <h3>Tools</h3>
-            <ul>
-                <li>Git & GitHub</li><li>VS Code</li><li>Postman</li>
-            </ul>
-        </article>
+        </div>
+
+        <!-- Featured Projects -->
+        <aside class="featured-projects">
+        <h3>Featured Projects</h3>
+        <ol>
+            <li>Credit Approval System (Django + PostgreSQL)</li>
+            <li>E-Commerce Frontend (React)</li>
+            <li>Task Manager App (JavaScript)</li>
+        </ol>
+        </aside>
+
     </div>
-</section>
+    </section>
 
-<section id="projects">
-<h2>Projects</h2>
-<div class="projects-container">
+    <!-- Contact Section -->
+    <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+        <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+        </div>
 
-    <!-- First row: 2 projects -->
-    <div class="projects-row">
-    <article class="project-card">
-        <img src="assets/images/project-1.jpg" alt="Screenshot of Portfolio Website">
-        <h3>Portfolio Website</h3>
-        <p>Responsive personal portfolio built using HTML and CSS.</p>
-        <a href="https://github.com/Hamsa-18/portfolio-project" target="_blank" rel="noopener">View Code</a>
-    </article>
+        <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+        </div>
 
-    <article class="project-card">
-        <img src="assets/images/project-2.jpg" alt="Screenshot of Task Manager App">
-        <h3>Task Manager App</h3>
-        <p>Task management application with DOM manipulation.</p>
-        <a href="https://github.com/Hamsa-18/task-manager" target="_blank" rel="noopener">View Code</a>
-    </article>
-    </div>
+        <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
 
-    <!-- Second row: 1 project -->
-    <div class="projects-row single">
-    <article class="project-card">
-        <img src="assets/images/project-3.jpg" alt="Screenshot of E-Commerce Frontend">
-        <h3>E-Commerce Frontend</h3>
-        <p>Modern e-commerce UI built with React components.</p>
-        <a href="https://github.com/Hamsa-18/ecommerce-frontend" target="_blank" rel="noopener">View Code</a>
-    </article>
-    </div>
+        <div class="form-group">
+        <input type="checkbox" id="consent" name="consent">
+        <label for="consent">I agree to be contacted</label>
+        </div>
 
-    <!-- Featured projects -->
-    <aside class="featured-projects">
-    <h3>Featured Projects</h3>
-    <ol>
-        <li>Credit Approval System (Django + PostgreSQL)</li>
-        <li>E-Commerce Frontend (React)</li>
-        <li>Task Manager App (JavaScript)</li>
-    </ol>
-    </aside>
-
-</div>
-</section>
-
-
-
-<section id="contact">
-    <h2>Get In Touch</h2>
-    <form id="contact-form" action="#" method="POST">
-    <div class="form-group">
-    <label for="name">Full Name *</label>
-    <input type="text" id="name" name="name" required minlength="2" maxlength="100">
-    </div>
-    <div class="form-group">
-    <label for="email">Email Address *</label>
-    <input type="email" id="email" name="email" required>
-    </div>
-    <div class="form-group">
-    <label for="subject">Subject *</label>
-    <select id="subject" name="subject" required>
-    <option value="">--Select--</option>
-    <option value="inquiry">Project Inquiry</option>
-    <option value="job">Job Opportunity</option>
-    <option value="other">Other</option>
-    </select>
-    </div>
-    <div class="form-group">
-    <label for="message">Message *</label>
-    <textarea id="message" name="message" rows="6" required minlength="10" maxlength="1000"></textarea>
-    </div>
-    <div class="form-group">
-    <input type="checkbox" id="terms" name="terms" required>
-    <label for="terms">I agree to be contacted</label>
-    </div>
-    <button type="submit" class="btn-primary">Send Message</button>
-    <button type="reset" class="btn-secondary">Clear</button>
+        <button type="submit">Send Message</button>
     </form>
-    <p class="direct-email">
-    Or email me at: <a href="mailto:hamsavmurthy@gmail.com">hamsavmurthy@gmail.com</a>
-    </p>
-</section>
+    </section>
+</main>
 
+<!-- Footer -->
 <footer>
-    <p>© 2026 HAMSA BV. All rights reserved.</p>
-    <div class="footer-links">
-        <a href="https://github.com/Hamsa-18" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://www.linkedin.com/in/hamsa-b-v-633748258/" target="_blank" rel="noopener">LinkedIn</a>
-    </div>
+    <p>&copy; 2026 Hamsa. All rights reserved.</p>
 </footer>
 
 </body>
