@@ -107,73 +107,66 @@
 </section>
 
 <section id="projects">
-    <h2>Projects</h2>
-    <div class="projects-container">
-        <div class="projects-grid">
-            <article class="project-card">
-                <img src="assets/images/project-1.jpg" alt="Screenshot of Portfolio Website">
-                <h3>Portfolio Website</h3>
-                <p>Responsive personal portfolio built using HTML and CSS.</p>
-                <a href="https://github.com/Hamsa-18/portfolio-project" target="_blank" rel="noopener">View Code</a>
-            </article>
-            <article class="project-card">
-                <img src="assets/images/project-2.jpg" alt="Screenshot of Task Manager App">
-                <h3>Task Manager App</h3>
-                <p>Task management application with DOM manipulation.</p>
-                <a href="https://github.com/Hamsa-18/task-manager" target="_blank" rel="noopener">View Code</a>
-            </article>
-            <article class="project-card">
-                <img src="assets/images/project-3.jpg" alt="Screenshot of E-Commerce Frontend">
-                <h3>E-Commerce Frontend</h3>
-                <p>Modern e-commerce UI built with React components.</p>
-                <a href="https://github.com/Hamsa-18/ecommerce-frontend" target="_blank" rel="noopener">View Code</a>
-            </article>
-        </div>
+<h2>Projects</h2>
+<div class="projects-container">
 
-        <aside class="featured-projects">
-            <h3>Featured Projects</h3>
-            <ol>
-                <li>Credit Approval System (Django + PostgreSQL)</li>
-                <li>E-Commerce Frontend (React)</li>
-                <li>Task Manager App (JavaScript)</li>
-            </ol>
-        </aside>
-    </div>
+<!-- First row: 2 projects -->
+<div class="projects-row">
+<article class="project-card">…Portfolio Website…</article>
+<article class="project-card">…Task Manager App…</article>
+</div>
+
+<!-- Second row: 1 project -->
+<div class="projects-row single">
+<article class="project-card">…E-Commerce Frontend…</article>
+</div>
+
+<!-- Featured projects -->
+<aside class="featured-projects">
+<h3>Featured Projects</h3>
+<ol>
+<li>Credit Approval System (Django + PostgreSQL)</li>
+<li>E-Commerce Frontend (React)</li>
+<li>Task Manager App (JavaScript)</li>
+</ol>
+</aside>
+
+</div>
 </section>
 
 <section id="contact">
     <h2>Get In Touch</h2>
     <form id="contact-form" action="#" method="POST">
-        <div class="form-group">
-            <label for="name">Full Name *</label>
-            <input type="text" id="name" name="name" required minlength="2" maxlength="100">
-        </div>
-        <div class="form-group">
-            <label for="email">Email Address *</label>
-            <input type="email" id="email" name="email" required>
-        </div>
-        <div class="form-group">
-            <label for="subject">Subject *</label>
-            <select id="subject" name="subject" required>
-                <option value="">--Select--</option>
-                <option value="inquiry">Project Inquiry</option>
-                <option value="job">Job Opportunity</option>
-                <option value="other">Other</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label for="message">Message *</label>
-            <textarea id="message" name="message" rows="6" required minlength="10" maxlength="1000"></textarea>
-        </div>
-        <div class="form-group">
-            <input type="checkbox" id="terms" name="terms" required>
-            <label for="terms">I agree to be contacted</label>
-        </div>
-        <button type="submit" class="btn-primary">Send Message</button>
-        <button type="reset" class="btn-secondary">Clear</button>
+    <div class="form-group">
+    <label for="name">Full Name *</label>
+    <input type="text" id="name" name="name" required minlength="2" maxlength="100">
+    </div>
+    <div class="form-group">
+    <label for="email">Email Address *</label>
+    <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+    <label for="subject">Subject *</label>
+    <select id="subject" name="subject" required>
+    <option value="">--Select--</option>
+    <option value="inquiry">Project Inquiry</option>
+    <option value="job">Job Opportunity</option>
+    <option value="other">Other</option>
+    </select>
+    </div>
+    <div class="form-group">
+    <label for="message">Message *</label>
+    <textarea id="message" name="message" rows="6" required minlength="10" maxlength="1000"></textarea>
+    </div>
+    <div class="form-group">
+    <input type="checkbox" id="terms" name="terms" required>
+    <label for="terms">I agree to be contacted</label>
+    </div>
+    <button type="submit" class="btn-primary">Send Message</button>
+    <button type="reset" class="btn-secondary">Clear</button>
     </form>
     <p class="direct-email">
-        Or email me at: <a href="mailto:hamsavmurthy@gmail.com">hamsavmurthy@gmail.com</a>
+    Or email me at: <a href="mailto:hamsavmurthy@gmail.com">hamsavmurthy@gmail.com</a>
     </p>
 </section>
 
